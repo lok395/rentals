@@ -1,0 +1,82 @@
+.account-settings-page {
+  background-color: #181818;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.account-settings-page h2 {
+  color: #A3FFD6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.account-settings-page .settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.account-settings-page .settings-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.account-settings-page .settings-field label {
+  color: #f39c12;
+  font-size: 18px;
+}
+
+.account-settings-page .settings-field input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  background-color: #3a3a3a;
+  color: #f1f1f1;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.account-settings-page .settings-field input:focus {
+  border-color: #f39c12;
+  outline: none;
+}
+
+.account-settings-page .save-button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+}
+
+.account-settings-page .save-button:hover {
+  background-color: #c0392b;
+}
+
+.account-settings-page p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #e74c3c;
+}

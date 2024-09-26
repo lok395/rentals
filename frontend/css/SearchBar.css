@@ -1,0 +1,41 @@
+.input-wrapper {
+    background-color: #ffffff;
+    width: 50%;
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: 0 15px;
+    box-shadow: 0px 4px 8px #0000001a;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-left: 5px;
+    color: #333;
+}
+
+input:focus {
+    outline: none;
+}
+
+#search-icon {
+    color: royalblue;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    border-color: royalblue;
+}
+
+.input-wrapper input::placeholder {
+    color: #aaa;
+}

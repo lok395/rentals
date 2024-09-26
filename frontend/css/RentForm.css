@@ -1,0 +1,130 @@
+#productForm {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#productForm:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+#productForm label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s;
+}
+
+#productForm label:hover {
+    color: #4CAF50;
+}
+
+#productForm select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#productForm select:focus {
+    border-color: #4CAF50;
+    background-color: #e0ffe0;
+}
+
+#productForm input[type="date"],
+#productForm input[type="number"],
+#productForm input[type="file"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    transition: border-color 0.3s, background-color 0.3s;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#productForm input[type="date"]:focus,
+#productForm input[type="number"]:focus,
+#productForm input[type="file"]:focus {
+    border-color: #4CAF50;
+    background-color: #e0ffe0;
+}
+
+#productForm button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#productForm button[type="submit"]:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 500px) {
+    #productForm {
+        width: 90%;
+        padding: 15px;
+    }
+    #productForm label {
+        font-size: 14px;
+    }
+    #productForm select,
+    #productForm input[type="date"],
+    #productForm input[type="number"],
+    #productForm input[type="file"] {
+        font-size: 12px;
+        padding: 8px;
+        max-width: calc(100% - 16px);
+    }
+    #productForm button[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
+
+.message.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}

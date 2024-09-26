@@ -1,0 +1,16 @@
+.carousel-container {
+    width: 100%;
+    max-width: 800px; 
+    margin: auto;
+  }
+  
+  .carousel-slide {
+    text-align: center;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    
+    aspect-ratio: 1;
+  }
